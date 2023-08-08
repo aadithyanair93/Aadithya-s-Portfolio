@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aadithya's Portfolio</title>
+    <style>
+      * {
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: #000;
+      }
+      nav {
+        margin-top: 0px;
+        display: flex;
+        color: white;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 60px;
+      }
+      nav ul li:hover{
+        color:rgb(126, 121, 121);
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    
+      }
+      .left {
+   font-size: 1.5rem;
+      }
+      
+      .line{
+        display:none;
+        background-color: white;
+        height:0.125rem;
+        width:1.5rem;
+        padding:1px;
+       
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        margin-right: 4rem;
+      }
+      
+        .firstsection{
+            display:flex;
+            justify-content: space-around;
+            margin:80px 0;
+            
+        }
+        .firstsection > div{
+          width:30%;
+          align-items: center;
+        }
+        .leftsection{
+        font-size: 1.5rem;
+        margin: 192px 0;
+        
+        }
+        .leftsection .btn{
+          background:#1e2167;
+          color:white;
+          border: 2px solid white;
+          border-radius: 6px;
+          font-size:20px;
+          cursor: pointer;
+          margin:31px 25px;
+        }
+        .leftsection .btn a{
+          text-decoration: none;
+        }
+       .rightsection img{
+        width:80%;
+        margin: 50px 0;
+      }
+      .purple{
+        color:blueviolet;
+      }
+      nav ul li a{
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+        color:rgb(153, 153, 226);
+        font-size: 1.01rem;
+
+      }
+      #element{
+        color: blueviolet;
+
+      }
+      .about{
+        margin-left: 50px;
+        font-size: 25px;
+        
+      }
+      hr{
+       margin-top: 6px ;
+      }
+      .about p{
+      font-size: 20px;
+      }
+      .about img{
+        display:inline;
+        
+      }
+      .skills{
+        display: flex;
+        font-size: 25px;
+        margin-left: 50px;
+        margin: 78px 50px;
+      }
+      .skills img{
+        display: inline;
+height:41px;
+      }
+      
+      .skills .box{
+        background: white;
+    width: 96vw;
+    height: 2px;
+    margin: 175px -145px;
+    display: flex;
+}
+      .skills .vertical{
+        height: 122px;
+    width: 1px;
+    background: white;
+    margin: 2px 116px;  
+}
+.img-top{
+  width: 45px;
+position: relative;
+  bottom:-62px;
+  left:-23px;
+}
+.vertical .title{
+  font-size: 20px;
+  position:relative;
+  top:-75px;
+  left:-80px;
+}
+.img-top-1{
+  width: 45px;
+position: relative;
+  bottom:-93px;
+  left:-21px;
+}
+.vertical .title-1{
+  width:5px;
+  font-size: 20px;
+  position:relative;
+  top:-51px;
+  left:-26px;
+}
+.img-top-2{
+  width: 45px;
+position: relative;
+  bottom:-93px;
+  left:-21px;
+}
+.vertical .title-2{
+  width:5px;
+  font-size: 20px;
+  position:relative;
+  top:-51px;
+  left:-22px;
+}
+.img-top-3{
+  width: 45px;
+position: relative;
+  bottom:-63px;
+  left:-26px;
+}
+.vertical .title-3{
+  width:5px;
+  font-size: 20px;
+  position:relative;
+  top:-63px;
+  left:-22px;
+}
+.img-top-4{
+  width: 92px;
+position: relative;
+  bottom: -94px;
+  left:-45px;
+}
+.vertical .title-4{
+  width:5px;
+  font-size: 20px;
+  position:relative;
+  top:-51px;
+  left:-51px;
+}
+.img-top-5{
+  width: 78px;
+  height: 15px;
+position: relative;
+  bottom:-92px;
+  left:-26px;
+}
+.vertical .title-5{
+  width:5px;
+  font-size: 20px;
+  position:relative;
+  top:-51px;
+  left:-22px;
+}
+.projects{
+  font-size:25px;
+  margin-left: 50px;
+  margin: 78px 50px;
+}
+.projects hr{
+  background:white;
+  margin: 20px 0px;
+}
+.projects img{
+  display:inline;
+  margin:-16px 10px;  
+}
+.projects ul li{
+  color:blueviolet;
+  margin:24px 5px;
+  text-decoration: underline greenyellow;
+  text-underline-offset: 8px;
+  font-size: 25px;
+}
+.projects ul span{
+  font-size:15px;
+}
+footer{
+  display: flex;
+  background: rgb(18, 18, 62);
+
+  }
+  footer .own{
+    font-size:large;
+  
+  }
+ 
+footer .items li{
+  margin:50px 2px;
+ list-style: none;
+
+}
+footer .items a{
+ text-decoration: none;
+}
+.link{
+  display: inline;
+}
+.link img{
+  display: flex;
+  width:25px;
+ margin:185px 242px;
+ margin:44px 450px;
+}
+.contact p{
+  margin:44px 450px;
+}
+.link span{
+   margin:104px 450px;
+  }
+
+.purple-1{
+  color:blueviolet;
+  font-size: 23px;
+}
+
+       @media only screen and (max-width: 450px) {
+        
+        .left {
+          justify-content: start;
+        }
+        nav ul li {
+          display: none;
+          flex-direction: column;
+        }
+        .line{
+          display: flex;
+          margin:-15px -24px;
+            
+        }
+        .firstsection{
+         flex-direction: column-reverse;
+      }
+
+      .leftsection{
+        margin: 20px 0;
+        font-size:1rem;
+        margin-left: 100px;
+     
+      }
+      .leftsection .btn{
+          background:#1e2167;
+          color:white;
+          border: 2px solid white;
+          border-radius: 7px;
+          font-size:20px;
+          cursor: pointer;
+          margin:21px -26px;
+        }
+        .leftsection .btn a{
+          text-decoration: none;
+        }
+       .rightsection img{
+        width:80%;
+        margin: 50px 0;
+      }
+      .rightsection img{
+        height:290px;  
+        width:240px;
+        margin-left: 50px;
+      }
+      .about{
+        font-size: 30px;
+        margin-left: 2px;
+        
+      }
+      hr{
+       margin-top: 6px;
+       width:390px;
+       background : white;
+      }
+      .about p{
+      font-size: 10px;
+      width:370px;
+      justify-content: center;
+      }
+      .about img{
+        display:inline;
+        margin-left: 2px;
+        
+      }
+      .skills{
+        display: flex;
+       font-size: 25px;
+        margin-left: -8px;
+        
+      }
+      .skills img{
+        display: inline;
+      margin-left: 0;
+      }
+      .skills hr{
+        margin-top:5px;
+        
+       background : white;
+      }
+      .skills .box{
+        background: white;
+    width: 375px;
+    height: 2px;
+    margin: 146px -98px;
+    display: flex;
+}
+     
+.skills .vertical{
+  height: 108px;
+    width: -2px;
+    background: white;
+    margin: 1px 32px;
+}
+.img-top{
+  width: 33px;
+    position: relative;
+    bottom: -80px;
+    left: -16px;
+}
+.vertical .title{
+  font-size: 10px;
+    position: relative;
+    top: -51px;
+    left: -34px;
+}
+.img-top-1{
+  width: 40px;
+    position: relative;
+    bottom: -95px;
+    left: -17px;
+}
+
+.vertical .title-1{
+  width: 5px;
+    font-size: 10px;
+    position: relative;
+    top: -39px;
+    left: -14px;
+}
+.img-top-2{
+  width: 40px;
+    position: relative;
+    bottom: -94px;
+    left: -21px;
+}
+.vertical .title-2{
+  width: 5px;
+    font-size: 10px;
+    position: relative;
+    top: -39px;
+    left: -11px;
+}
+
+.img-top-3{
+  width: 40px;
+    position: relative;
+    bottom: -79px;
+    left: -25px;
+}
+.vertical .title-3{
+ 
+  width:5px;
+  font-size: 10px;
+  position:relative;
+  top:-47px;
+  left:-18px;
+}
+.img-top-4{
+  
+  width: 75px;
+    position: relative;
+    bottom: -92px;
+    left: -39px;
+}
+
+.vertical .title-4{
+  width: 5px;
+    font-size: 11px;
+    position: relative;
+    top: -41px;
+    left: -32px;
+}
+
+.img-top-5{
+  width: 60px;
+    height: 15px;
+    position: relative;
+    bottom: -82px;
+    left: -38px;
+}
+.vertical .title-5{
+  width: 5px;
+    font-size: 10px;
+    position: relative;
+    top: -41px;
+    left: -15px;
+}
+.projects{
+  margin-left: 0px;
+}
+.projects ul span{
+  width:10px;
+}
+footer{
+  display: flex;
+  
+  flex-direction: column;
+  background: rgb(18, 18, 62);
+
+  }
+  footer .own{
+
+    font-size:large;
+  
+  }
+ 
+footer .items li{
+  margin:50px 2px;
+ list-style: none;
+
+}
+footer .items a{
+ text-decoration: none;
+}
+.link{
+  display: inline;
+}
+.link img{
+  display: flex;
+  width:25px;
+ margin:185px 242px;
+ margin:44px 50px;
+}
+footer .contact p{
+  
+  margin:44px 10px;
+}
+.link span{
+   margin:104px 450px;
+  }
+
+.purple-1{
+  color:blueviolet;
+  font-size: 23px;
+}
+footer p{
+  flex-direction: column;
+}
+       }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left">Aadithya's Portfolio</div>
+      
+
+
+  
+      <div class="right">
+        <ul>
+          <li><a href="#firstsection">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="ham">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    </nav>
+    <main>
+        <section class="firstsection">
+         
+            <div class="leftsection">
+              Hi! My Name is <span class="purple">Aadithya Nair</span>
+              <div>& I am a</div>
+            <span id="element"></span>
+            <div class="buttons">
+         <button class="btn"><a href="Aadithya Nair CV.pdf">Download CV</a></div>
+            </div>
+                 </div>
+                <div class="rightsection">
+                  <img src="IMG_8181.jpg" alt=""></div>
+          
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    
+    <div class="about" id="about">
+      <img src="colour about.png" alt="">About Me<hr>
+      <p>Hi! I am Aadithya Nair currently pursuing BE in Computer Engineering at Gyanmanjari Institute of Technology, Bhavnagar. My Aim is to achieve a job as a Full Stack Developer. I enjoy developing Websites and solving problems.
+         In my free time, I like to experiment with new programming languages and frameworks, as well as explore the latest advancements in my Field.
+         I am also an avid traveller and enjoy discovering new cuisines around the world.</p>
+
+    </div>
+    <div class="skills" id="skills">
+      <img src="skill.png" alt="" srcset="">Skills
+     
+      <div class="box">
+        <div class="vertical">
+          <div class="title">C Programming</div>
+           
+          <img src="570px-C_Programming_Language.svg.png" class="img-top" alt="" srcset="">
+        </div>
+        <div class="vertical">
+          <div class="title-1">HTML</div>
+           <img src="732212.png" class="img-top-1" alt="" srcset="">
+        </div>
+        <div class="vertical">
+          <div class="title-2">CSS</div>
+           <img src="CSS3_logo.svg.png" class="img-top-2" alt="" srcset="">
+        </div>
+        <div class="vertical">
+          <div class="title-3">Tailwind CSS</div>
+           <img src="tailwind-css-icon.png" class="img-top-3" alt="" srcset="">
+        </div>
+        <div class="vertical">
+          <div class="title-4">Javascript</div>
+          <img src="javascript-39395.png" class="img-top-4" alt="" srcset="">
+        </div>
+        <div class="vertical">
+          <div class="title-5">Java</div>
+          <img src="Java-Logo.png" class="img-top-5" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+    <div class="projects" id="projects">
+      <img src="icons8-project-48.png" alt="" srcset="">Projects<hr>
+      <ul>
+        <li>Trading Buddy</li>
+        <span>Project created under Design Engineeing Subject. It is a website for business person's. Created Using HTML& CSS.</span>
+        <li>Homeflix</li>
+        <span>Project Crated under Design Engineering Subject. It is an web application for online video streaming. Created Using HTML, CSS & Javascript.</span>
+        <li>Facebook Sign In Page Clone</li>
+        <span>Created Facebook Sign In page clone using HTML & Tailwind CSS.</span>
+        <li>Microsoft Home Page Clone</li>
+        <span>Created Microsoft Home Page Clone using HTML & Tailwind CSS</span>
+        <li>Weather Glance</li>
+        <span>A Web Application which shows real-time weather of a particular location. Currently Working on it. </span>
+      </ul>
+
+    </div>
+<footer>
+        <div class="items"><ul>
+          <li><a href="#firstsection">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul></div>
+        <div class="contact" id="contact">
+          <p class="purple-1">Contact:</p><p>Email:aadithyanair93@gmail.com</p>
+          <span class="link">
+            <a href="https://www.linkedin.com/in/aadithya-nair-26846b270"><img src="174857.png" alt="" srcset=""></a>
+            <a href="https://instagram.com/aadithya_nair_9838?igshid=OGQ5ZDc2ODk2ZA=="><img src="174855.png" alt="" srcset=""></a>
+          </span>
+          <p class="own">&copy Aadithya Nair-2023</p>
+        </div>
+        
+       
+      
+    </footer>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Student Of Computer Engineering.', '&amp; Web Developer.'],
+        typeSpeed: 50,
+      });
+    </script>
+       <script src="resp.js"></script>
+    
+  </body>
+</html>
